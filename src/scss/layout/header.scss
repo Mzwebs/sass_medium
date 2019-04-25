@@ -1,0 +1,113 @@
+/* logo of the site for mobile devices*/
+.logo img {
+    width: 35px;
+    margin-left: 21px;
+    margin-top: 11px;
+    display: flex;
+    float: left;
+
+    @include for-tablet-portrait-up {
+        display: none
+}
+
+}
+
+/* replacement for logo while screen increases*/
+.logo h1 {
+    font-size: 30px;
+    padding-top: 20px;
+    margin-left: 20px;
+    float: left;
+    
+    @include for-phone-only {
+        display: none
+    }
+   
+    
+}
+
+/* sign up link header*/
+.logo h3{
+    font-size: 16px;
+    display: flex;
+    justify-content: flex-end;
+    color: rgb(89, 182, 112);
+    padding-top: 24px;
+    padding-right: 35px;
+  
+    text-align:center;
+   
+    @include for-phone-only {
+        display: none
+    }
+    @include for-smart-phone-only  {
+        display: none
+    }
+
+   
+
+}
+
+/*get startet link header*/
+.logo h4{
+    font-size: 16px;
+    display: flex;
+    justify-content: flex-end;
+    color: rgb(89, 182, 112);
+    padding-top: 24px;
+    padding-right: 35px;
+    /************
+    border: 1px solid rgb(105, 221, 134);
+    border-radius: 5px;
+    *********/
+
+}
+
+
+/* section menkey photo with its article*/
+.monkey-photo img{
+    width: 100%;
+    object-fit: cover;
+    height: 200px;
+    padding:20px;
+    object-position: 20% 80%;
+
+    @include for-tablet-portrait-up {
+        width: 50%;
+        object-fit: cover;
+        height: 200px;
+        padding-left:2px;
+        padding-top:20px;
+        
+    }
+}
+
+.monkey-photo h2 {
+    padding-left:20px;
+    text-align: left;
+}
+
+.monkey-photo h5 {
+    padding-left:20px;
+    padding-top:5px;
+    text-align: left;
+    color: rgb(148, 148, 146);
+}
+
+.monkey-photo p {
+    padding-left:20px;
+    padding-top:10px;
+    text-align: left;
+    color: rgb(49, 49, 48);
+}
+
+.monkey-photo {  
+    margin-top:50px;
+
+    @include for-tablet-portrait-up {
+     float: left;
+     width: 75%;
+      }
+    }
+      
+  

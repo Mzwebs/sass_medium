@@ -1,0 +1,106 @@
+/* pour enlèver les espace des coin*/
+
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+@include for-desktop-up {
+.section-left img{
+    width: 100%;
+    object-fit: cover;
+    height: 200px;
+    padding:20px;
+    object-position: 20% 80%;
+}
+
+.section-left {   
+    
+    float: left;
+    width: 60%;
+	margin-right: 200px;
+    @include for-phone-only {
+        
+    }
+  }
+  
+  /* Right column */
+
+  .row .section-right h2{
+      display: none;
+      margin-top: 40px;
+      @include for-phone-only {
+        display: none;
+        
+    }
+	  
+	  
+     
+     
+  }
+
+  .section-rigth p{
+    
+    margin-bottom: 30px;  
+    @include for-phone-only {
+      display: none;
+      
+  }
+  
+}
+
+  .section-rigth h2{
+	font-size: 20px;
+  @include for-phone-only {
+    display: none;
+    
+}
+
+    
+}
+
+  .section-rigth img {
+    
+     width: 10px;
+     float: left;
+     padding-right: 10px;
+     @include for-phone-only {
+      display: none;
+      
+  }
+  
+    
+     
+  }
+
+  
+  .section-rigth {
+   
+    float: left;
+    width: 40%;
+	padding-left: 20px;
+	position: fixed;
+      bottom: 0;
+	  right: 0;
+	  
+    @include for-phone-only {
+      display: none;
+      
+  }
+  
+  }
+
+  
+  /* Clear floats after the columns */
+  .never-miss:after {
+    @include for-tablet-portrait-up {
+    content: "";
+    display: table;
+    clear: both;
+    
+  }
+}
+}
